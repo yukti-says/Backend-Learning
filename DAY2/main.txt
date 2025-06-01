@@ -1,0 +1,41 @@
+npm -> node package manager but it has other packages as well so it full form does not make sense. here node se related packages , react etc se related packages. npm is a place where you get packages. node js core mein jo aata h wo module hota h & jo ham npm se download karte h wo package hota h.
+
+---------------------------------------
+
+text-to-speech google has created a package for it
+
+INSTALLING AND UNINSTALLING THINGS
+npm install package_name / npm i package_name
+
+npm uninstall packagename
+
+jo bhi install karte h that becomes the dependency.
+
+kisi package ka particular version install karna -> npm install packagename@version(3.1.9) etc
+
+
+
+--------------------------------
+UNDERSTANDING NODE MODULE:
+packages and inke dependencies code yaha aa jate h
+
+
+-----------------------------------
+dependencies : PACKAGES AND PACKAGES KI dependencies
+
+devdepemdencies : ese packages jo only development me kaam aayega and jab app ban jayega and jab ham ise deploy ho jayega tab ham inhe use nhi kar rahe honge , esi chij jo only kaam karte time use hoga 
+
+--------------------------------
+scripts : kai bar you run a script and us script me you write npm start ,  and npm run dev and npm run concurrent to why??
+
+two scripts : start & test
+so when you install node or npm these two words / commands are written on OS table and as you write npm start , test , run so OS checks for the command in table if it gets so it executes the code otherwise throws error
+
+
+so in script part you can create command by yourself and run them if scripts are start and test you can diractly run like npm start, but if you have some other one ex:chacha script so you will do npm run chacha
+
+
+--------------------
+if you want color full data so install chalk package
+
+

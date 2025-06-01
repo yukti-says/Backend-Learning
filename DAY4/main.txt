@@ -1,0 +1,35 @@
+FORM HANDLING AND WORKING WITH THE FORMS
+install cookie parser -> you can get it into npm website 
+UNDERSTAND SESSOION AND COOKIE:  so imagine you went on instagram and there you wanna like a photo but it says before liking you need to login into insta so you logged in and then  liked the photo and go ,instagram server forgets the use and then  ,   again you wanna like another photo you go to instagram and it says login in first so you log in but by again and agina it can be frastating here comes session and login
+
+session & cookie: ham log kuch bhi data frontent par browser par rakh sakte h and jab bhi aap kuch bhi  request backend par karoge wo frontent par saved data automatically backend par chala jayega  , so data ke sath me kuch string wagera bhi di jaati h taki server jab new request get kare and uske sath me string bhi check kare and see ki kya ye pahle se h and if pahle se h to samaj jaye ki kon sa user h thus responses , otherwise new user ko login karne ko bole
+cookie[saved data on frontent mostly used on authentication , user logged in rakhne ke liye]
+session[process of request and responses  ,  build on cookie , connection between client and server]
+
+app.use(express.json());
+app.use(express.urlencoded({extended true}));
+
+blob : jab data binary format me hota h, when you enter data so this direct data in plan letter does not go onto server these converts into blobs[unreadable streams {hexadecimal me}] 
+meaning :  yaha se hindi me bheja backend ne english me le liya ab wapas data ko hindi me convert karna padega
+
+
+app.use(express.json())
+
+This enables Express to parse incoming JSON payloads from requests.
+
+If you're sending JSON data in a POST request, this middleware ensures that req.body contains the parsed JSON instead of being undefined.
+
+app.use(express.urlencoded({ extended: true }))
+
+This enables Express to parse application/x-www-form-urlencoded data.
+
+If a form is submitted (like in your example), this middleware ensures form fields are accessible through req.body.
+
+The { extended: true } option allows complex object parsing (nested objects).
+
+What Happens If You Remove Them?
+If app.use(express.json()) is missing:
+
+Any JSON data sent in a POST request (like fetch("/submit", { method: "POST", body: JSON.stringify({...}) })) won't be parsed.
+
+req.body will be undefined.

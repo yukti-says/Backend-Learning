@@ -1,0 +1,19 @@
+EXPRESS JS
+many students call themselves a mern stack dev but when i ask them little about it fail to do so. yes they can write amazing code , routes etc but they fail to explain what exctly these are , what is express js what it does etc.
+so lets get the real Express js in real not in blur thing
+express js is a npm package , it is a framework [framework->jab koi tech tumhe batati h ki kon si chij kaise karni h and you have to do that in that way only , it gives you flow and you have to work in this flow only , you have many things available , and indiviuality you can do according to you but maintain the flow]
+[library : gives you tools ,  no flow , and you have to just go and work , create according to you with no flow like framework ]
+so express js is a framework and thus you need to work in a flow like first acquire express js ,  set up app  ,  server etc 
+express js manages everything from recieving requests and giving back the responses
+saying facebook to muje ye pic send karna request , express js accept request and thus response.
+get , post , data , blob to convert into json , database connnect to ur server.
+
+MIDDLEWARE: jab bhi server request accept karta h waha se route ke beech pahuchane tak agr aap us request ko beech me rokte ho and kuch perform karte ho to ye element middleware kahte h in most cases , one way of writing middleware is app.use() , it has many use cases in javascript
+request - middleware - routes - response
+
+
+download nodemon 
+run : nodemon script.js
+
+ERROR HANDLING:
+write in last of routes 

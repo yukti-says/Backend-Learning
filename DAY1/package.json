@@ -1,0 +1,12 @@
+{
+  "name": "day1",
+  "version": "1.0.0",
+  "description": "day one",
+  "license": "ISC",
+  "author": "yukti sahu",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,59 @@
+many ppl run from theory but learning adnd understanding theory is important
+data storage:aisa kuch jaha par ham saare ki info store kar skte hai
+
+data bases:where we store large about od data and of many types of data.
+types:
+SQl: keep data into a structure : table
+NoSQL:here tables is not a structure, in this we have objects{
+    name:"yukti",
+    age:21,
+}
+you need just basic info about how objects works., nosql is conceptual
+MongoDB is db name who follows NoSQL , MongoDB is implementation of Nosql concept.Its actual database based on Nosql,and stores data into objects from.
+
+why MOngoDB:
+in order to store data, any ppl data name,age,likes,followers etc to store various kind of data
+
+In backend we have two servers:application server(routes , request etc ) and database server(all the data related work )
+
+Termonologies:
+
+IN CODE SIDE                                  IN MOngoDB
+-----------------------------------------------------------------
+DB setup                                      DB formation
+Model                                         collections
+schema                                        document
+
+so in a amazon's database can be divided into various types of data like userdata , admin data,customer data ,  premium user data etc this variety in datasets in the same database is created using models (when you writing code for creating different type of data parts)(in mongodb collections)
+and i this various 
+code likhte h model ka jo ki database me collection banata h ex.userModel , user ka collection bana hai
+and when you create schema in code so in database me documents banate h 
+
+
+ik app ka pura data {a whole khandan} => database
+app me different verity of different data hota h but pura data app ka hi hota h {small small family}  bante h model se =>collection
+and small family me se ik particular person like me so it will be a document , collections me se ik user=>document
+
+collections:sells collection,user collection : customer collections etc[different types of data in db].
+document:users collections me se when you are seeing any particulary user's data this is called as document.
+
+
+Database -> Collections ->Documents
+
+---------------------------------------
+when we connect mongoose.connect ->database create and connect
+model created ->collection creation
+user model , customer model etc
+create -> document create hota hai
+schema->ik user ke pass kya kya dikhega
+---------------------------------------
+
+implementation in code:
+INSTALLATION:
+go to mongodb website go products and click on community edition and get download button
+MongoDB connection
+{get two servers , Node server and a db server}
+npm i express and npm i mongoose
+mongoose help talk between node server and db server
+
+

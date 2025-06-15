@@ -1,0 +1,4 @@
+Data association in mongoDB
+a shot named bhagwati traders sells 5 products on amazon so details of products are stored in array and in amazon can store those products in two ways
+1. data referencing : it is just keeping those products ids not the whole products , considered better than other one, and  many company uses this
+2. data emabading :  where the whole data of products are kept , in this data reading is easy but needs more storage 

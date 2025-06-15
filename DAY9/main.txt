@@ -1,0 +1,10 @@
+express generator : it creates a folder for us jiska mean you do not have to create br ur own,just like when you use vite and create folder for react same, express generator works.
+steps to use this:
+install in laptop globally like nodemon
+npm i express-generator 
+to create new app anywhere -> open cmd -> move to desktop -> create new app with `express appname --view=ejs
+
+now use three commands:
+cd appname
+npm i 
+open it to vscode -> code .

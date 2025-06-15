@@ -1,0 +1,10 @@
+create user account
+ mongoose
+ schema
+ model
+ usercreate ->password ->with hashing 
+ jwt token create ->set cookie
+
+after this
+ login ->token recieve ->so will decrypt ->get email and search for user
+ 

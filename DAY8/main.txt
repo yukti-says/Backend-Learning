@@ -1,0 +1,38 @@
+AUTHENTICATION & AUTHORIZATION
+
+user ko profile dene se pahle ye check karna hota h ki user h kon for ex: mohan goes to facebook ane ask there for his profile but before giving profile facebook asks him that who are you (it checks in its database about his detail) then mohan says this is my usename , email and password. and when facebook varifies it then it shows profile to mohan. this is called authentication basically means validating any user and after it letting him do things he wants  to like creating photos posting etc.
+
+AUTHORIZATION: imagine anaya went to amazon logs in and see the product and its rate, now she wants to change the price of a product and ask it to amazon but amazon first checks it in admin database whether this person is there or not, if she is not in admin so she can not do any updation. basically means what powers a user can have this is specidied by AUTHORIZATION
+authorize to perform some tasks which are only allowed to be executed by admin
+
+cookie concept in the authentication
+
+things to learn:
+1.creating cookies setting updation
+2.bcrypt use for encryption and dcryption
+3.jwt and jwt me data store and bahar nikale.
+
+
+varoius ways to authentication and AUTHORIZATION ex:google , apple etc
+
+INSTALLATIONS:
+npm i jsonwebtoken , cookie-parser , bcrypt , express 
+
+SETTING UP COOKIE[server se brower pe kuch data save karwa dena]
+go into app.js file. and whenever u go to another route the cookie will automatically go together by browser itself a differenece between AUTHORIZATION header and cookie.
+setting up cookie ->setting
+read any cookiec->req
+
+
+
+bcrypt FOR PASSOWRD
+genSalt ->a string + and a hash(diya hua password change hota h ulte sheedhe characters me )
+
+
+12344232
+$2b$10$W3AZIY620mcbJHKpljdBLO3iyrN1pWQIlh3k4ri2bdx4LcbApQ2tm
+
+
+
+JWT:basically three chijo se mil ke bana hua h , and it is a string which gets from server when you signed up fpr first time , so jwt ki help se jo string hame server se mili h usme se data ham bahar nikalte h
+

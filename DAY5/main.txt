@@ -1,0 +1,31 @@
+DYNAMIC ROUTING
+EJS :  is jinja templates in flask , can write html and calcution performancs
+
+install : npm i EJS
+setup ejs as middleware for view engine
+
+now u can use render in place of res.send to res.render ejs pages
+
+
+console.log(__dirname) this gives name of folder in which you are working
+so to go in more in the current folder working directory
+(__dirname/'/public')
+
+
+    DYNAMIC ROUTING:
+    ham log kai bar kuch routes dekhte h unme hamesha kuch hissa hi change hota h ex:
+    /author/hamesh
+    /author/yukti
+    /author/anu
+    /author/new 
+
+    so for these all do we write each routes for each of them noh, here comes the DYNAMIC ROUTING understand it:
+    1.sabse pahle browser pe jao
+    2.url likha enter dabayee
+    3.ab uss url ko create karo
+    4.response bhejo kuch bhi
+    ex localhost:3000/profile/yukti
+    5.ab isi ko dynamic banana h to realize karo kon sa part dynamic so uske aage route me : laga do
+
+
+    : ka mean h ye part dynamic hai and jab bhi koi bhi url iss pattern ko match karega wo chalne lagega : ke baad ye variable ban chuka h 

@@ -26,15 +26,30 @@ const User = mongoose.model('User', userSchema)
 async function runQuery() {
   try {
     // create new user aka document
-    const newuser = await User.create({
-      name: "yukti",
-      email: "psjfr@gmail.com",
-      age: 20,
-      isActive: true,
-      tags:['coder','cooker','cooler']
-    })
+    // const newuser = await User.create({
+    //   name: "saniya singh",
+    //   email: "psjfr@gmail.com",
+    //   age: 22,
+    //   isActive: false,
+    //   tags:['lovering',"web dev"]
+    // })
 
-    console.log("created user",newuser)
+    // console.log("created user",newuser)
+
+    // get all users
+    // const allusers = await User.find()
+    // console.log(allusers)
+
+    // users those who are not active
+    // const oneuser = await User.findOne({ isActive: false })
+    // console.log(oneuser)
+
+    // get only selected users with selected features
+    const selecteduser = await User.find({isActive:false}).select("name email -_id")
+    console.log(selecteduser)
+
+ 
+
   }
   catch (e) {
     console.log('error ->',e)

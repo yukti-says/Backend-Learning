@@ -32,8 +32,8 @@ Access full live documentation here:
 ## 🔧 Setup Instructions
 
 ```bash
-git clone https://github.com/yukti-says/Backend-Learning/BooksTavaAPI
-cd books-api-node-mongodb
+git clone https://github.com/yukti-says/Backend-Learning/tree/main/BooksTavaAPI
+cd BooksTavaAPI
 npm install
 ```
 

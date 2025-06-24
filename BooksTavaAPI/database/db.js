@@ -7,7 +7,7 @@ const connectDB = async () => {
         await mongoose.connect(
           "mongodb+srv://jarkyamin:aCyAAw5Q2L3r92U4@cluster0.zmrma1m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
         );
-        console.log("connected")
+        console.log("connection done")
         
     }
     catch (e) {
